@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Checkout the code from your Git repository
-                bat 'https://github.com/Mohamedrasheq/pipeline3.git'
+                git 'https://github.com/Mohamedrasheq/pipeline3.git'
                 
                 // Build the Maven project
                 bat 'mvn clean package'
@@ -24,4 +24,4 @@ pipeline {
             }
         }
     }
-}
+} 
